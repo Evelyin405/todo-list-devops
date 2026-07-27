@@ -11,3 +11,12 @@ def show_tasks():
 
 add_task("Learn Git")
 show_tasks()
+def remove_task(task):
+    if task in tasks:
+        tasks.remove(task)
+        print(f"Removed: {task}")
+    else:
+        print(f"{task} not found")
+
+remove_task("Learn Git")
+show_tasks()       
