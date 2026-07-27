@@ -5,9 +5,9 @@ def add_task(task):
     print(f"Added: {task}")
 
 def show_tasks():
-    print("Your tasks:")
-    for t in tasks:
-        print("-", t)
+     print("Your tasks:")
+     for i, t in enumerate(tasks, start=1):
+        print(f"{i}. {t}")
 
 add_task("Learn Git")
 show_tasks()
